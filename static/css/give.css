@@ -1,0 +1,12 @@
+.rowM {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.columnM {
+    width: 10vw;
+    padding: 10px;
+    align-items: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Meta tags-->
+        <meta charset="utf-8">
+        <!--Optimization for mobile + web-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Google Icon Link-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Materialize Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="css/get.css">
+        <!--Remove 404 error-->
+        <link rel="shortcut icon" href="#">
+        <title>Page 1</title>
+    </head>
+    <body>
+        <div class="vptop ch-center">
+            <form action="sheduleappointment" method="post">
+                <div class="input-field inline">
+                    <label for="usernInput">Gaurdian's Name</label>
+                    <input type="text" name="Name" id="usernInput">
+                </div>
+                <div class="input-field inline">
+                    <label for="usernInput">Gaurdian's Phone Number</label>
+                    <input type="tel" name="PPhNum" pattern="[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]{}">
+                </div>
+                <div class="input-field inline">
+                    <label for="patientnInput">Patient's Name</label>
+                    <input type="text" name="PName" id="patientnInput">
+                </div>
+                <div class="input-field inline">
+                    <label for="patientdobInput">Patient's Date Of Birth</label>
+                    <input type="text" name="PDOB" id="patientdobInput" class="datepicker">
+                </div>
+                <div class="input-field inline s12">
+                    <label for="patientsympInput">Patient's Symtoms</label>
+                    <textarea type="text" name="symp" id="patientsympInput" class="materialize-textarea" data-length="24"></textarea>
+                </div>
+                <label class="input-field inline">
+                    <input type="checkbox" name="emergency" id="patientemrInput">
+                    <span>Emergency/Critical?</span>
+                </label>
+                <div class="input-field inline">
+                    <button type="submit" class="waves-effect waves-light btn-large">Request Appointment</button>
+                </div>
+            
+            </form>
+        </div>
+        <!--JavaScript & JQuery CDN links at end of body for optimized loading-->
+        <script src="js/get.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    </body>
+
+</html>
